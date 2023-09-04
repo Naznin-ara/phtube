@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>PH-HeroTube</title>
+    <style>
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+        .active{
+            background-color:#FF1F3D !important ;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <header class="max-w-screen-2xl mx-auto">
+        <div class="max-w-screen-2xl mx-auto flex justify-between items-center bg-base-100 flex-wrap lg:flex-nowrap p-4 gap-4 lg:gap-0">
+            <div class="mx-auto lg:mx-0 ">
+             
+              <a class="btn btn-ghost normal-case text-xl"><img src="./image/Logo.png" alt=""></a>
+            </div>
+            <div class=" lg:flex">
+              <button class="btn mr-[10rem]" onclick="sortByView()">Sort By View</button>
+            </div>
+            <div class="mx-auto lg:mx-0">
+              <a class="btn bg-[#FF1F3D] text-white" onclick="openBlog()">Blog</a>
+            </div>
+          </div>
+          <hr>
+    </header>
+    <section class="max-w-screen-2xl mx-auto my-8 flex justify-center items-center gap-4" id="tabsection">
+    </section>
+    <section class="max-w-screen-2xl mx-auto my-10 flex justify-center items-center" >
+        <div id="cardContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
+           
+        </div>
+        
+    </section>
+    <div class="flex justify-center items-center" id="otherdiv">
+
+    </div>
+    <script src="file.js"></script>
+</body>
+</html>

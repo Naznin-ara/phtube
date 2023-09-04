@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog</title>
+</head>
+<body>
+    <!-- Discuss the scope of var, let, and const
+Tell us the use cases of null and undefined
+What do you mean by REST API? -->
+    <h1 class="text-center mt-10 text-3xl font-bold">BLOG</h1>
+    <section class="max-w-screen-2xl mx-auto flex flex-col justify-center items-center gap-4 mt-10">
+        
+        <div class="w-[80%] h-auto lg:h-[360px] p-8 rounded-lg bg-green-200 shadow-md shadow-[#111111B3]">
+        <h1 class="text-xl font-bold mb-4">1. Discuss the scope of var,let and const</h1>
+        <p>var, let and const are used to declare variable. They have different scopes and behaviours. Some overviews of the scope of each are given below: <br>
+
+            <span class="text-base font-semibold underline">1. 'var' Scope:</span> 'var' have both function and global scope depending whether they are declared. If 'var' declared inside a function then they can not accessible outside the function.If 'var' declared outside the function, then they are accessible throughout the entire script. <br>
+            
+            <span class="text-base font-semibold underline">2. 'let' Scope:</span> 'let' have block scoped,that means they can only be accessed within the block they were declared in, such as a loop or an if/else statement.  <br>
+            <span class="text-base font-semibold underline">3. 'const' Scope:</span> 'const' also have block scope as like 'let'. The difference between 'let' and 'const' is that let is mutable, while 'const' is immutable. The value of const can not be reassign while the value of let can be reassigned. <br>Variables declared with var can sometimes lead to unexpected behavior due to their hoisting behavior.This may lead to unintentional variable re-declarations.That,s why it's recommended to use let and const for variable declarations, as they offer more predictable behavior </p>
+        </div>
+         <div class="w-[80%] h-auto lg:h-[500px] p-8 rounded-lg bg-green-200 shadow-md shadow-[#111111B3]">
+        <h1 class="text-xl font-bold mb-4">2. Tell us the use cases of null and undefined</h1>
+        <p>In JavaScript, null and undefined are both represent the absence of a value, but they have different use cases. <br>
+
+            <span class="text-base font-semibold underline">1.undefined:</span> when a variable that has been declared but not initialized with a value then the value of that variable is called undefined. It can also be returned by a function that does not explicitly return anything. Use cases for undefined include:
+            <ul class="list-disc -mr-2 ml-4">
+                 <li>To set default values for function parameters</li>
+                <li>To check if a variable has been initialized or not</li>
+                <li>To check if a function returned a value.</li>
+               <li>To check the parameter is passed or not.</li>
+               <li>To check the property in an object is exist or not.</li>
+            </ul>
+            
+            
+           
+            <span class="text-base font-semibold underline">2.null:</span> On the other hand, null is a value that represents the intentional absence of any object value. It can be assigned to a variable to indicate that it has no value. Use cases for null include:
+            <ul class="list-disc -mr-2 ml-4">
+                 <li>To check the absence of an object value</li>
+                <li> Explicitly indicating that a variable has no value</li>
+                <li>To clear the value of a variable</li>
+                <li>We set variable to null for reset it or release any reference  to free up memory or resources.</li>
+                <li>Can be used as a default value in function parameters or when assigning values</li>
+                <li>null also used as a placeholder value until real value obtained.</li>
+               
+
+            </ul>
+          
+            </p>
+        </div>
+        <div class="w-[80%] h-auto lg:h-[500px] p-8 rounded-lg bg-green-200 mb-10 shadow-md shadow-[#111111B3]">
+            <h1 class="text-xl font-bold mb-4">3. What do you mean by REST API?</h1>
+            <p>REST API stands for Representational State Transfer Application Programming Interface, which is an architectural style for building web services that allow different software applications to communicate and interact with each other over the internet.Here's some main feature of REST API, <br>
+                <ul class="list-disc -mr-2 ml-4">
+                  <li>This is a type of web service that allows for communication between two systems over HTTP.Each resource can represent a specific entity or object, such as a user, product, or order.</li>
+                  <li> Resources are identified by a unique URI (Uniform Resource Identifier) and can be manipulated using a set of standard HTTP methods.HTTP methods are GET(request data from a specified resource), POST(submit data to processed to a specified resource), PUT(to update or creat resource),PATCH( similar to the PUT method, but it's used to apply partial modifications to a resource) and DELETE(request to removal of a resource at a specified URL).</li>
+                  <li>Client-server architecture,here the client and server are independent and can develop separately without affecting each other.</li>
+                  <li>Each request from the client to the server contains all the necessary information to complete the request. The server doesn't store any client context between requests.This allows for better flexibility and simplicity.</li>
+                  <li>REST APIs can take advantage of HTTP caching mechanisms to improve performance. Responses can be marked as cacheable or non-cacheable, based on the nature of the data and the desired behavior.</li>
+                  <li>It had layred architecture ,where each layer has specific role and functionalities.</li>
+                  <li>REST API should provide links along with the responses,which is known as Hypermedia as the Engine of Application State (HATEOAS).which allowing clients to discover and work with the available resources and actions dynamically</li>
+                </ul>
+                
+                
+                
+                
+                
+                
+                </p>
+            </div>
+
+    </section>
+  <script src="file.js"></script>  
+</body>
+</html>
